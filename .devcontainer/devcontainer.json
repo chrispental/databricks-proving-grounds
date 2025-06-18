@@ -1,0 +1,28 @@
+{
+	"name": "databricks-proving-grounds",
+	"dockerFile": "Dockerfile",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/va-h/devcontainers-features/uv:1": {},
+		"ghcr.io/devcontainers/features/azure-cli:1": {}
+	},
+
+
+	"remoteEnv": {
+		"UV_CACHE_DIR": "/workspaces/databricks-proving-grounds/.cache/uv"
+	},
+
+	
+	"customizations": {
+        "vscode": {
+            "extensions": [
+				"GitHub.copilot",
+				"ms-python.python"
+			],
+            "settings": {
+                "python.defaultInterpreterPath": "/workspaces/databricks-proving-grounds/.venv/bin/python"
+            }
+        }
+    },
+	"postCreateCommand": "if [ ! -d .venv ]; then uv venv .venv; fi && uv pip install -r pyproject.toml"
+}
