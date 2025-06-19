@@ -4,4 +4,11 @@ version = "0.1.0"
 description = "DB Proving Grounds"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "agno>=1.6.3",
+    "gradio>=5.34.1",
+    "mlflow>=3.1.0",
+    "openai>=1.88.0",
+    "tavily-python>=0.7.7",
+    "yfinance>=0.2.63",
+]

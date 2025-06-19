@@ -1,0 +1,10 @@
+command: [
+  "python",
+  "app.py"
+]
+
+env:
+  - name: "OPENROUTER_API_KEY"
+    value: "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"
+  - name: "TAVILY_API_KEY"  
+    value: "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"
