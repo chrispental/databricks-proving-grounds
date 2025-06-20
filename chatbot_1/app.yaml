@@ -4,7 +4,7 @@ command: [
 ]
 
 env:
-  - name: "OPENROUTER_API_KEY"
-    value: "NONE"
-  - name: "TAVILY_API_KEY"  
-    value: "NONE"
+  - name: OPENROUTER_API_KEY
+    valueFrom: open_router
+  - name: TAVILY_API_KEY 
+    valueFrom: tavily
